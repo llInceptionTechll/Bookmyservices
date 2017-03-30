@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="20dp">
+
+    <tech.inception.bookmyservices.custom.TextViewNormal
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/rs"
+        android:paddingLeft="20dp"
+        android:text="item"
+        android:id="@+id/item_name_id"
+        android:textColor="@android:color/darker_gray"
+        />
+
+    <tech.inception.bookmyservices.custom.TextViewNormal
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs "
+        android:id="@+id/rs"
+        android:textColor="#000"
+        android:layout_toLeftOf="@+id/price_id"/>
+
+    <tech.inception.bookmyservices.custom.TextViewNormal
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textColor="#000"
+        android:layout_alignParentRight="true"
+        android:id="@+id/price_id"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_name_id"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/plus_minus_lay">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:src="@drawable/minus"
+            android:id="@+id/minus_img"/>
+        <tech.inception.bookmyservices.custom.TextViewNormal
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/qty_text"
+            android:textColor="#000"
+            android:padding="5dp"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:src="@drawable/add"
+            android:id="@+id/plus_img"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/plus_minus_lay"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>

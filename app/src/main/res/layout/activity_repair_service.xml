@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_laundry_service"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="tech.inception.bookmyservices.views.Repair_service">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/toolbar_gradient">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"
+            android:padding="10dp"
+            android:id="@+id/back_icon"
+            android:clickable="true"
+            />
+        <tech.inception.bookmyservices.custom.TextViewNormal
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/back_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/service_name"
+            />
+
+        <tech.inception.bookmyservices.custom.TextViewNormal
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:text="0"
+            android:textColor="@color/startColor"
+            android:background="@drawable/cart_number"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/cart_item_no"
+
+            />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/cart"
+            android:layout_toLeftOf="@+id/cart_item_no"
+            android:layout_centerVertical="true"
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:id="@+id/bottom_lay"
+        android:layout_alignParentBottom="true"
+        >
+
+        <tech.inception.bookmyservices.custom.TextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/middleColor"
+            android:text="ADD TO CART"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="add_cart"/>
+
+        <tech.inception.bookmyservices.custom.TextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/startColor"
+            android:text="CONTINUE"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:clickable="true"
+            android:onClick="continue_to_cart"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/bottom_lay"
+        android:id="@+id/scroll_service"
+        android:layout_alignParentStart="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <tech.inception.bookmyservices.custom.TextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:padding="20dp"
+                android:text="What's included in the service?"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ac_service"/>
+
+                <tech.inception.bookmyservices.custom.TextViewNormal
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16sp"
+                    android:text="Wet Service - Filter , drain tray , outer panel , blower wheels , blades and cooling coil will be cleaned."
+                    android:textColor="@android:color/darker_gray"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/installation"/>
+
+                <tech.inception.bookmyservices.custom.TextViewNormal
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16sp"
+                    android:text="Check - up of performance of the AC unit post service.."
+                    android:textColor="@android:color/darker_gray"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/repair"/>
+
+                <tech.inception.bookmyservices.custom.TextViewNormal
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16sp"
+                    android:text="If any repair work required , a quote will be given before proceeding."
+                    android:textColor="@android:color/darker_gray"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/info"/>
+
+
+
+                <tech.inception.bookmyservices.custom.TextViewNormal
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prices shown are for labour charges only."
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@android:color/darker_gray"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:clickable="true"
+                android:onClick="show_rate"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/rate_card2"/>
+
+
+                <tech.inception.bookmyservices.custom.TextViewNormal
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Rate card - "
+                    android:textSize="16sp"
+                    android:textColor="@android:color/darker_gray"/>
+
+                <tech.inception.bookmyservices.custom.TextViewNormal
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="View"
+                    android:textSize="16sp"
+                    android:textColor="@color/startColor"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="10dp">
+
+                <tech.inception.bookmyservices.custom.TextViewNormal
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Window AC"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:layout_weight="1"/>
+
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:layout_toLeftOf="@+id/qty_text"
+                    android:src="@drawable/minus"
+                    android:layout_weight="1"/>
+
+                <tech.inception.bookmyservices.custom.TextViewNormal
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:id="@+id/qty_text"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/add_image"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:layout_width="80dp"
+                    android:padding="10dp"
+                    android:id="@+id/add_image"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/add"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="10dp">
+
+                <tech.inception.bookmyservices.custom.TextViewNormal
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Split AC"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:layout_weight="1"/>
+
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:layout_toLeftOf="@+id/qty_text2"
+                    android:src="@drawable/minus"
+                    android:layout_weight="1"/>
+
+                <tech.inception.bookmyservices.custom.TextViewNormal
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:id="@+id/qty_text2"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/add_image2"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:layout_width="80dp"
+                    android:padding="10dp"
+                    android:id="@+id/add_image2"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/add"/>
+            </RelativeLayout>
+
+            <tech.inception.bookmyservices.custom.TextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please Note"
+                android:textColor="#000"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"/>
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:background="@android:color/darker_gray"/>
+
+            <tech.inception.bookmyservices.custom.TextViewNormal
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/startColor"
+                android:padding="20dp"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="Conveneince charge of Rs 200 will be charged adjustable against the final bill."/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

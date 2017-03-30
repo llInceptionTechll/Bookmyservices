@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f16973</color>
+    <color name="colorPrimaryDark">#d85fa6</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="startColor">#f16973</color>
+    <color name="middleColor">#d85fa6</color>
+    <color name="endColor">#a34cdb</color>
+    <color name="white">#fff</color>
+    <color name="black">#a7a7a7</color>
+
+    <color name="alphastartColor">#aff16973</color>
+    <color name="alphamiddleColor">#afd85fa6</color>
+    <color name="alphaendColor">#afa34cdb</color>
+</resources>

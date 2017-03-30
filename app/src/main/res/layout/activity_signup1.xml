@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_signup1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/gradient"
+    tools:context="tech.inception.bookmyservices.views.Signup1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/user_icon_id"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@drawable/user_icon" />
+
+        <tech.inception.bookmyservices.custom.EditTextAvira
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/user_icon_id"
+            android:background="@null"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:id="@+id/name_et"
+            android:hint="enter name"
+            android:inputType="textPersonName"
+
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/name_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:layout_marginBottom="10dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@drawable/feedback"
+            android:tint="#fff"/>
+
+        <tech.inception.bookmyservices.custom.EditTextAvira
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/user_icon_id"
+            android:background="@null"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:id="@+id/email_et"
+            android:hint="enter email"
+            android:inputType="textPersonName"
+
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/email_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:layout_marginBottom="10dp"
+        android:background="@color/white" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/pass_icon_id"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:padding="8dp"
+            android:src="@drawable/smartphone_icon" />
+
+        <tech.inception.bookmyservices.custom.TextViewNormal
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91"
+            android:textColor="@color/white"/>
+        <tech.inception.bookmyservices.custom.EditTextAvira
+            android:id="@+id/mobile_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/pass_icon_id"
+            android:background="@null"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:maxLength="10"
+            android:hint="enter mobile no."
+            android:inputType="phone"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/password_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:layout_marginBottom="10dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:padding="8dp"
+            android:src="@drawable/password_icon" />
+
+
+        <tech.inception.bookmyservices.custom.EditTextAvira
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/pass_icon_id"
+            android:background="@null"
+            android:padding="10dp"
+            android:maxLength="10"
+            android:textSize="18sp"
+            android:id="@+id/pass_et"
+            android:hint="enter password"
+            android:inputType="textPassword"/>
+
+    </LinearLayout>
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:layout_marginBottom="10dp"
+        android:background="@color/white" />
+
+
+    <Button
+        android:id="@+id/signin_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/rounded_rectangle"
+        android:backgroundTint="#ffffff"
+        android:text="NEXT"
+        android:onClick="verifymobile"
+
+        android:textColor="@color/startColor" />
+
+
+    <tech.inception.bookmyservices.custom.TextViewNormal
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Had Account ? Sign In"
+        android:clickable="true"
+        android:onClick="close"/>
+</LinearLayout>

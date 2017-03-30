@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_signup1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="25dp"
+    android:background="@drawable/gradient"
+    tools:context="tech.inception.bookmyservices.views.Signup2">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="please enter the four digit otp sent on your mobile number"
+        android:textSize="16sp"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_marginTop="10dp"
+        >
+
+        <tech.inception.bookmyservices.custom.EditTextAvira
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:id="@+id/otp_pin1"
+            android:layout_margin="10dp"
+            android:background="@drawable/editext_otp_back"/>
+
+        <tech.inception.bookmyservices.custom.EditTextAvira
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:id="@+id/otp_pin2"
+            android:layout_margin="10dp"
+            android:background="@drawable/editext_otp_back"/>
+
+        <tech.inception.bookmyservices.custom.EditTextAvira
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:id="@+id/otp_pin3"
+            android:layout_margin="10dp"
+            android:background="@drawable/editext_otp_back"/>
+
+        <tech.inception.bookmyservices.custom.EditTextAvira
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:id="@+id/otp_pin4"
+            android:layout_margin="10dp"
+            android:background="@drawable/editext_otp_back"/>
+
+    </LinearLayout>
+
+
+
+
+
+    <Button
+        android:id="@+id/signin_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/rounded_rectangle"
+        android:backgroundTint="#ffffff"
+        android:text="VERIFY"
+        android:onClick="gotocity"
+        android:textColor="@color/startColor" />
+
+
+
+</LinearLayout>

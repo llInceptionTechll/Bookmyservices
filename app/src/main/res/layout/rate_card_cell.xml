@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="20dp">
+
+    <tech.inception.bookmyservices.custom.TextViewNormal
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/rs"
+        android:paddingLeft="20dp"
+        android:text="item"
+        android:id="@+id/item_name_id"
+        android:textColor="@android:color/darker_gray"
+        />
+
+    <tech.inception.bookmyservices.custom.TextViewNormal
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs "
+        android:id="@+id/rs"
+        android:textColor="#000"
+        android:layout_toLeftOf="@+id/price_id"/>
+
+    <tech.inception.bookmyservices.custom.TextViewNormal
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textColor="#000"
+        android:layout_alignParentRight="true"
+        android:id="@+id/price_id"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/price_id"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>

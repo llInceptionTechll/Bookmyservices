@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tech.inception.bookmyservices">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".views.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".views.MainActivity" />
+        <activity
+            android:name=".views.Login"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".views.Signup1"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".views.Signup2"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".views.Signup3"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".views.Laundry_service" />
+        <activity android:name=".views.RateCard" />
+        <activity android:name=".views.Cart" />
+        <activity android:name=".views.Checkout" />
+        <activity android:name=".views.Profile" />
+        <activity android:name=".views.Repair_service" />
+        <activity android:name=".views.Repair_service_category" />
+        <activity android:name=".views.Add_item_cart"></activity>
+    </application>
+
+</manifest>
